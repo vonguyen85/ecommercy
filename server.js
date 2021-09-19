@@ -29,6 +29,7 @@ mongoose.connect(URI, {
 app.use('/user', require('./routes/userRoute'))
 app.use('/api', require('./routes/categoryRoute'))
 app.use('/api', require('./routes/upload'))
+app.use('/api', require('./routes/productRoute'))
 
 app.get('/', (req, res) => {
     return res.json('welcome to me')

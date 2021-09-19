@@ -11,7 +11,7 @@ cloudinary.config({
     secure: true
 })
 
-router.post('/upload', auth, authAdmin, (req, res) => {
+router.post('/upload', (req, res) => {
     try {
         if (!req.files || Object.keys(req.files).length === 0)
             return res.status(400).json({ message: 'No files were uploaded' })
