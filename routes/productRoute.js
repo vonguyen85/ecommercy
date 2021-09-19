@@ -4,7 +4,7 @@ const auth = require('../middleware/auth')
 const authAdmin = require('../middleware/authAdmin')
 
 
-router.route('/product')
+router.route('/products')
     .get(productController.getProducts)
     .post(productController.createProduct)
 
